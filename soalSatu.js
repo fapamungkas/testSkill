@@ -1,16 +1,11 @@
-let a = [];
-let b = [];
-
+var output = [];
 y = 7;
 
-for ( i = 1; i <= y; i++) {
-  return {
-  if (i + 1) {
-    console.log("x");
-  } else if (y - 1) {
-    console.log("x");
+for (i = 1; i <= y; i++) {
+  if (i == 2 || i == 6) {
+    output.push("x");
   } else {
-    console.log("y");
+    output.push("y");
   }
 }
-}
+console.log(output);
