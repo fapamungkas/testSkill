@@ -4,6 +4,13 @@ var data = [
   { type: "Foobar", year: 2020 },
 ];
 
-function ASC(var) {
-  return var[Foo] > ii[Bar] ? 1 : i[Foo] < ii[key] ? -1 : 0;
-}
+const type = ["Foo", "Bar", "Foobar"];
+const sorter = (a, b) => {
+  if (a.year !== b.year) {
+    return a.year - b.year;
+  } else {
+    return type.indexOf(a.month) - type.indexOf(b.type);
+  }
+};
+data.sort(sorter);
+console.log(data);
